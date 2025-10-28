@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTest Pro - Earn Money Testing Websites</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">WebTest Pro</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#register">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Earn Money Testing Websites</h1>
+            <p class="subtitle">Work from home, set your own hours, and get paid weekly for testing websites</p>
+            <button class="cta-button" onclick="scrollToForm()">Start Earning Today</button>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Sign Up</h3>
+                    <p>Fill out the quick registration form</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Test Websites</h3>
+                    <p>Complete simple website testing tasks</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Paid</h3>
+                    <p>Receive weekly payments for your work</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <div class="benefit-cards">
+                <div class="benefit-card">
+                    <div class="icon">⏰</div>
+                    <h3>Flexible Hours</h3>
+                    <p>Work whenever you want</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🌍</div>
+                    <h3>Work Remote</h3>
+                    <p>Work from anywhere</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">💰</div>
+                    <h3>Weekly Pay</h3>
+                    <p>Get paid every week</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-items">
+                <div class="stat-item">
+                    <div class="stat-number">1,200+</div>
+                    <div class="stat-label">Active Testers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Sites Tested</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">$500K+</div>
+                    <div class="stat-label">Total Paid</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="register">
+        <div class="container">
+            <div class="form-card">
+                <h2>Join as a Website Tester</h2>
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+355 XX XXX XXXX" required>
+                    </div>
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+                <div id="success-message" class="success-message" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <p>Your application has been sent via WhatsApp! We'll contact you soon at <strong id="contact-info"></strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Testers Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"Easy way to make extra money. Highly recommend!"</p>
+                    <div class="author">- Maria K.</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Perfect for students or anyone looking for flexible work."</p>
+                    <div class="author">- John D.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Contact: WhatsApp: 0688155866</p>
+            <p>&copy; 2025 WebTest Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/3550688155866" target="_blank" class="whatsapp-float" title="Contact us on WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <path fill="white" d="M16 0C7.164 0 0 7.164 0 16c0 2.824.739 5.477 2.032 7.781L0 32l8.438-2.016A15.93 15.93 0 0 0 16 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.267c-2.551 0-4.948-.695-7.012-1.904l-.501-.295-5.19 1.244 1.255-5.036-.326-.52A13.215 13.215 0 0 1 2.733 16c0-7.328 5.939-13.267 13.267-13.267S29.267 8.672 29.267 16 23.328 29.267 16 29.267zm7.266-9.932c-.398-.199-2.354-1.161-2.719-1.294-.365-.132-.631-.199-.897.199-.266.398-1.029 1.294-1.261 1.56-.232.266-.465.299-.863.1-.398-.199-1.68-.619-3.199-1.974-1.183-1.054-1.982-2.356-2.214-2.754-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.697.199-.232.266-.398.398-.664.132-.266.066-.498-.033-.697-.1-.199-.897-2.161-1.229-2.958-.324-.776-.653-.671-.897-.684-.232-.012-.498-.015-.764-.015s-.697.1-1.062.498c-.365.398-1.394 1.361-1.394 3.323s1.427 3.854 1.626 4.119c.199.266 2.806 4.284 6.795 6.006.949.409 1.69.653 2.268.836.952.302 1.818.259 2.503.157.763-.114 2.354-.963 2.686-1.892.332-.93.332-1.727.232-1.892-.1-.166-.365-.266-.764-.465z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
