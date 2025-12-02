@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebTest Pro - Earn Money Testing Websites</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      /* Optional: basic positioning for chat in corner */
+      #n8n-chat-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        width: 400px;
+        max-width: 90%;
+        height: 600px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -155,7 +169,29 @@
         </svg>
     </a>
 
+    <!-- n8n Chat Widget -->
+    <div id="n8n-chat-container"></div>
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+      createChat({
+        container: document.getElementById('n8n-chat-container'),
+        webhookUrl: 'https://luert3.app.n8n.cloud/webhook/3d90c4b2-e8cf-449a-a5fa-fe914d83e250/chat',
+        initialMessages: [
+          'Përshëndetje! 👋 Unë jam asistenti juaj për rezervimin e makinave me qira. Si mund t\'ju ndihmoj sot?'
+        ],
+        i18n: {
+          en: {
+            title: 'Asistenti i Rezervimit',
+            subtitle: 'Rezervoni makinën tuaj',
+            footer: '',
+            getStarted: 'Filloni bisedën',
+            inputPlaceholder: 'Shkruani mesazhin tuaj...',
+          }
+        }
+      });
+    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
-
