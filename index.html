@@ -6,17 +6,40 @@
     <title>WebTest Pro - Earn Money Testing Websites</title>
     <link rel="stylesheet" href="style.css">
     <style>
-      /* Optional: basic positioning for chat in corner */
+      /* n8n Chat Widget CSS */
       #n8n-chat-container {
         position: fixed;
-        bottom: 20px;
+        bottom: 100px; /* mbi WhatsApp */
         right: 20px;
         z-index: 9999;
         width: 400px;
         max-width: 90%;
         height: 600px;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        background-color: white; /* siguron dukshmërinë */
+        overflow: hidden;
+      }
+
+      /* Floating WhatsApp Button */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #25d366;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        z-index: 9998; /* pak më poshtë chat-it */
+      }
+
+      .whatsapp-float svg {
+        width: 32px;
+        height: 32px;
       }
     </style>
 </head>
